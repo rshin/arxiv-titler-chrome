@@ -1,0 +1,12 @@
+{
+    "name": "arXiv PDF titler",
+    "version": "0.1",
+    "description": "Set the title of arXiv PDF tabs to be the paper's title.",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["*://arxiv.org/pdf/*"],
+            "js": ["contentScript.js"]
+        }
+    ]
+}
